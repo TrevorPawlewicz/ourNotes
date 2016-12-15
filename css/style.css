@@ -1,0 +1,46 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: url("../images/legal-page.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #F9F5DA;
+}
+
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+#myContainer h1, p {
+    /*font-family: 'Rock Salt', cursive;*/
+    /*font-family: 'Nothing You Could Do', cursive;*/
+    /*font-family: 'Calligraffitti', cursive;*/
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* buttons */
+#myContainer .brownBtn {
+    margin-top: 30px;
+}
+.brownBtn {
+    color: #FFFFFF;
+    background-color: rgba(120, 52, 27, 0.8);
+}
+.brownBtn:hover {
+    color: #ffff00;
+    background-color: rgba(120, 52, 27, 1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
