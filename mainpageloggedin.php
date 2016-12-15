@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>ourNotes</title>
+    <title>myNotes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Calligraffitti|Nothing+You+Could+Do|Rock+Salt" rel="stylesheet">
@@ -29,14 +29,15 @@
 
             <div class="navbar-collapse collapse" id="myNav">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li class="active"><a href="#">My Notes</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- link to login modal -->
-                    <li><a href="#loginModal" data-toggle="modal">Login</a></li>
+                    <li><a href="#">Logged in as <b>username</b></a></li>
+                    <li><a href="#">Logout</a></li>
                 </ul>
             </div>
 
@@ -50,14 +51,38 @@
 
 
 
-    <!-- Body text area with signup button -->
-    <div class="jumbotron" id="myContainer">
-        <h1>Online Notes App</h1>
-        <p>Share your notes with anyone!</p>
-        <button type="button" class="btn btn-lg brownBtn" data-target="#signupModal"
-                data-toggle="modal">Sign Up!
-        </button>
-    </div> <!-- end jumbotron -->
+    <!-- Body text area -->
+    <div class="container notes-container">
+        <div class="row">
+            <!-- skip the first 3 columns then use next 6 columns: -->
+            <div class="col-md-offset-3 col-md-6">
+                <div class="note-buttons">
+                    <button class="btn btn-lg btn-info" type="button" id="addNote">
+                        Add Note
+                    </button>
+                    <button class="btn btn-lg btn-info pull-right" type="button" id="edit">
+                        Edit
+                    </button>
+                    <button class="btn btn-lg btn-success pull-right" type="button" id="done">
+                        Done
+                    </button>
+                    <button class="btn btn-lg btn-info" type="button" id="allNotes">
+                        All Note
+                    </button>
+                </div>
+
+                <!-- hidden text area -->
+                <div id="notePad">
+                    <textarea rows="10"></textarea>
+                </div>
+
+                <div id="notes">
+                    <!-- AJAX call to a PHP file to display notes -->
+                </div>
+            </div> <!-- end col-md-offset-3 col-md-6 -->
+            
+        </div> <!-- end row -->
+    </div> <!-- end container -->
 
 
 

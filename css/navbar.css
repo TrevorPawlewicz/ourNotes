@@ -1,3 +1,6 @@
+.navbar-brand {
+    text-shadow: 2px 2px 2px #AD2750;
+}
 .navbar-custom {
   background-color: #622a16;
   border-color: #471e10;
